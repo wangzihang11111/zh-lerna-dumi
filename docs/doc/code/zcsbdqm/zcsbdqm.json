@@ -1,0 +1,111 @@
+{
+  "toolbar" : {
+    "listbar" : {
+      "top" : {
+        "buttons" : [ "add", "delete" ]
+      },
+      "grid" : {
+        "buttons" : [ "edit", "view", "check", "history" ]
+      }
+    },
+    "editbar" : {
+      "TabPage1" : {
+        "buttons" : [ "addrow", "deleterow" ]
+      },
+      "top" : {
+        "buttons" : [ "save", "attachment", "|", "back" ]
+      }
+    }
+  },
+  "grid" : {
+    "zcsbdqmd1grid" : {
+      "id" : "zcsbdqmd1grid",
+      "buskey" : "id",
+      "bindtable" : "zcsbdqm_detail",
+      "desTitle" : "明细表",
+      "columns" : [ {
+        "langKey" : "selectMetadataDetail",
+        "dataIndex" : "selectMetadataDetail",
+        "width" : 150,
+        "header" : "明细表查询字段",
+        "editor" : {
+          "maxLength" : 50,
+          "xtype" : "Input"
+        }
+      } ]
+    },
+    "listgrid" : {
+      "id" : "listgrid",
+      "buskey" : "id",
+      "bindtable" : "zcsbdqm_main",
+      "desTitle" : "单据列表",
+      "isBillList" : true,
+      "showProjectOrgTree": true,
+      "columns" : [ {
+        "langKey" : "selectMetadataOne",
+        "dataIndex" : "selectMetadataOne",
+        "width" : 150,
+        "header" : "查询元数据1"
+      }, {
+        "langKey" : "selectMetadataTwo",
+        "dataIndex" : "selectMetadataTwo",
+        "width" : 150,
+        "header" : "查询元数据2"
+      }, {
+        "langKey" : "selectMetadataThree",
+        "dataIndex" : "selectMetadataThree",
+        "width" : 150,
+        "header" : "查询元数据3"
+      } ]
+    }
+  },
+  "fieldSetForm" : {
+    "zcsbdqmmform" : {
+      "id" : "zcsbdqmmform",
+      "buskey" : "id",
+      "bindtable" : "zcsbdqm_main",
+      "desTitle" : "主表",
+      "fieldSets" : [ {
+        "desTitle" : "主表",
+        "itemId" : "Fieldset1",
+        "langKey" : "",
+        "allfields" : [ {
+          "label" : "查询元数据1",
+          "name" : "selectMetadataOne",
+          "langKey" : "selectMetadataOne",
+          "maxLength" : 50,
+          "colspan" : 1,
+          "xtype" : "Input"
+        }, {
+          "label" : "查询元数据2",
+          "name" : "selectMetadataTwo",
+          "langKey" : "selectMetadataTwo",
+          "max" : 2147483647,
+          "min" : -2147483648,
+          "colspan" : 1,
+          "xtype" : "InputNumber"
+        }, {
+          "label" : "查询元数据3",
+          "name" : "selectMetadataThree",
+          "langKey" : "selectMetadataThree",
+          "max" : 127,
+          "min" : -128,
+          "colspan" : 1,
+          "xtype" : "InputNumber"
+        } ],
+        "xtype" : "fieldset"
+      } ]
+    }
+  },
+  "tabPanel" : {
+    "tab1" : {
+      "id" : "tab1",
+      "desTitle" : "tab",
+      "items" : [ {
+        "id" : "TabPage1",
+        "title" : "明细表",
+        "langKey" : "TabPage1"
+      } ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@zh/zh-design",
+  "version": "1.0.0",
+  "description": "UI库",
+  "keywords": [
+    "zh-design"
+  ],
+  "scripts": {
+    "build": "father build"
+  },
+  "author": "wzh",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@zh/zh-core": "1.0.0",
+    "dayjs": "^1.10.6",
+    "memoize-one": "^5.2.0",
+    "react-resizable": "^3.0.4",
+    "spark-md5": "^3.0.2",
+    "xlsx": "^0.18.4"
+  },
+  "gitHead": "455861d136421df7a2ac9b3a3b9076565ee3d229"
+}

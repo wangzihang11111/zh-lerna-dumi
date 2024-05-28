@@ -1,0 +1,114 @@
+.dumi-default-doc-layout {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+}
+
+.dumi-default-color-switch {
+  font-size: 14px;
+}
+
+.dumi-default-navbar>li>a {
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.dumi-default-table-content>table tr>td:last-child {
+  white-space: nowrap;
+}
+
+.dumi-default-sidebar>dl>dd>a.active {
+  color: var(--primary-color, #0081cc);
+}
+
+.dumi-default-navbar>li>a.active {
+  color: var(--primary-color, #0081cc);
+  position: relative;
+
+  &::before {
+    content: '';
+    border-top: 4px solid var(--primary-color, #0081cc);
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    top: -30px;
+    left: 0;
+  }
+}
+
+html[data-prefers-color=dark] {
+  .dumi-default-navbar>li>a {
+    color: #8590a0;
+
+    &.active {
+      color: #c6c9cd;
+    }
+  }
+}
+
+.dumi-default-sidebar,
+.dumi-default-header-left {
+  width: 220px !important;
+}
+
+.dumi-default-doc-layout>main,
+.dumi-default-header-content {
+  max-width: 1920px !important;
+  padding: 0 3vw;
+}
+
+.dumi-default-header {
+  z-index: 99 !important;
+}
+
+.dumi-default-hero {
+  max-height: 80vh;
+}
+
+.dumi-default-table-content>table tr>th {
+  text-align: left;
+}
+
+.dumi-default-table-content>table tr>td:first-child {
+  white-space: nowrap;
+}
+
+.dumi-default-table-content>table tr>td:nth-child(2) {
+  width: 40%;
+}
+
+.dumi-default-sidebar>dl>dt {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.dumi-default-sidebar>dl>dd>a {
+  font-size: 14px;
+}
+
+.dumi-default-hero-title {
+  font-weight: 900;
+  font-size: 68px;
+}
+
+.__dumi-default-previewer {
+  margin-bottom: 15px;
+}
+
+.dumi-default-logo {
+  font-size: 18px !important;
+  color: rgba(0, 0, 0, 0.88) !important;
+  font-weight: 600 !important;
+}
+
+.__dumi-default-layout-toc,
+.__dumi-default-navbar {
+  right: 0;
+}
+
+.dumi-default-navbar>li {
+  margin-inline-end: 2.8vw !important;
+  font-size: 14px !important;
+}
+
+.markdown {
+  font-size: 14px !important;
+}

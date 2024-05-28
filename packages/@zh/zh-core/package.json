@@ -1,0 +1,36 @@
+{
+  "name": "@zh/zh-core",
+  "version": "1.0.0",
+  "description": "zh core",
+  "keywords": [
+    "zh core"
+  ],
+  "scripts": {
+    "build": "father build"
+  },
+  "author": "wzh",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "antd": "5.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "umi": "^4.0.63"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "dva-model-extend": "^0.1.2",
+    "react-sortable-hoc": "^2.0.0",
+    "umi-request": "^1.4.0"
+  },
+  "gitHead": "754ff637e089a7440d1c1afa9b91ac7763423d6f"
+}

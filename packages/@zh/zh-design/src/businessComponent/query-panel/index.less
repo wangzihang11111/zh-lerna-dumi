@@ -1,0 +1,62 @@
+.query_search_form.ant-form {
+  padding: 10px 16px;
+  background-color: var(--component-background);
+
+  .query_fields {
+    .ant-form-item-label > label {
+      width: var(--form-label-width, 98px);
+      max-width: 100%;
+      line-height: var(--height-base);
+      display: flex;
+      justify-content: end;
+
+      &.ant-form-item-no-colon {
+        width: 0;
+        max-width: 0;
+      }
+
+      > span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+        width: 0;
+      }
+    }
+
+    &.ant-form-small {
+      .ant-form-item-label > label {
+        line-height: var(--height-sm);
+      }
+    }
+
+    .ant-form-item {
+      flex-wrap: nowrap;
+      margin-bottom: 10px;
+    }
+
+    &.query_items .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    .ant-form-item-control {
+      flex: 1;
+      width: 0;
+    }
+  }
+}
+
+.query_search_form {
+  background-color: var(--component-background);
+
+  .skeleton-flex {
+    .ant-skeleton-element {
+      flex: 1;
+      overflow: hidden;
+
+      > * {
+        width: 100%;
+      }
+    }
+  }
+}

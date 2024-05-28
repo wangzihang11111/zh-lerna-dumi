@@ -1,0 +1,31 @@
+.help-with-icon {
+  .ant-select-clear {
+    right: 28px;
+  }
+
+  .ant-select-arrow {
+    right: 10px;
+  }
+}
+
+.help-responsive {
+  .ant-select-selector {
+    flex-wrap: nowrap;
+  }
+
+  .ant-select-selection-overflow {
+    flex-wrap: nowrap;
+    padding-right: 30px;
+  }
+}
+
+.ant-select-disabled {
+  &.ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+  &.help-responsive .ant-select-selection-overflow {
+    padding-right: 0;
+  }
+
+  &.ant-select-multiple .ant-select-selection-item {
+    border-color: #dfdfdf !important;
+  }
+}

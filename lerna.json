@@ -1,0 +1,25 @@
+{
+  "changelog": {
+    "labels": {
+      "pr(enhancement)": ":rocket: Enhancement",
+      "pr(bug)": ":bug: Bug Fix",
+      "pr(documentation)": ":book: Documentation",
+      "pr(dependency)": ":deciduous_tree: Dependency",
+      "pr(chore)": ":turtle: Chore"
+    },
+    "repo": "umijs/father-doc",
+    "cacheDir": ".changelog"
+  },
+  "packages": ["packages/*"],
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    },
+    "version": {
+      "exact": true
+    }
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent"
+}

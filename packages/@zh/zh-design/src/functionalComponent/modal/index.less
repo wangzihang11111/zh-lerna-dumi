@@ -1,0 +1,39 @@
+.zh-ant-modal {
+  .zh-modal-title {
+    color: var(--modal-header-color);
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .ant-modal-confirm-body .ant-modal-confirm-content {
+    margin-top: 0;
+  }
+
+  .ant-modal-confirm-btns {
+    display: none;
+  }
+
+  .disabled-draggable {
+    cursor: default;
+  }
+
+  .header-right-icon {
+    height: 100%;
+    margin-left: 15px;
+    color: var(--modal-close-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.25s;
+    font-size: 16px;
+
+    &:hover {
+      color: rgba(var(--modal-close-color), 0.8);
+    }
+  }
+}

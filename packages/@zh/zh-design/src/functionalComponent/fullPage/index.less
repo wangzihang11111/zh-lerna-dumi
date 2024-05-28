@@ -1,0 +1,30 @@
+.zh-full-page {
+  position: relative;
+  transition: top 0.3s;
+  color: var(--text-color);
+  background-color: var(--component-background);
+  min-height: 40px;
+  min-width: 40px;
+
+  .btn-icon {
+    cursor: pointer;
+    display: none;
+    color: #999;
+    z-index: 9;
+    position: absolute;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &.resident-icon .btn-icon {
+    display: flex;
+  }
+
+  &:hover {
+    .btn-icon {
+      display: flex;
+    }
+  }
+}
